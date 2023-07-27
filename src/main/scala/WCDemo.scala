@@ -7,7 +7,7 @@ object WCDemo {
   def main(args: Array[String]): Unit = {
     Logger.getLogger("org").setLevel(Level.ERROR)
 
-    println("new changes =================================")
+    println("new changes ==============================changed on 27/7 ===")
     val sc = new SparkContext();
 
 
