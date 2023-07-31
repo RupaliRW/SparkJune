@@ -21,6 +21,6 @@ object SparkHiveDemo extends App{
   val empDF = Seq(("Rupali", "Mumbai"), ("Mohsin", "pune"), ("Devi", "bangalore"), ("Alex", "hyderabad"))
     .toDF("fName", "city")
 
-  empDF.repartition(1).write.mode(SaveMode.Overwrite).saveAsTable("june.EmployeeRRR")
+  empDF.repartition(1).write.mode(SaveMode.Overwrite).saveAsTable("june.Employee")
 
 }
