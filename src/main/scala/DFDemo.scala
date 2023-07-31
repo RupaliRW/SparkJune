@@ -13,7 +13,7 @@ object DFDemo extends App{
   sparkConf.set("spark.app.name","Dataframe Demo")
   sparkConf.set("spark.master","local[*]")
 
-  val spark = SparkSession.builder().config(sparkConf).getOrCreate()
+  val spark = SparkSession.builder().config(sparkConf).enableHiveSupport().getOrCreate()
   //way1 : DDL string
   val ordersDDL = "orderid Int, orderdate String, custid Int, status String"
 

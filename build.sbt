@@ -15,6 +15,11 @@ libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.2"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.4.3"
 
 
+// https://mvnrepository.com/artifact/org.apache.spark/spark-hive
+libraryDependencies += "org.apache.spark" %% "spark-hive" % "2.4.3"
+
+
+
 
 lazy val root = (project in file("."))
   .settings(
